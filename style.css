@@ -1,0 +1,33 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+}
+
+.weather-container {
+    height: 30wh;
+}
+.result { 
+    background-color:#185B9B;
+    color: white;
+    visibility: hidden;
+}
+
+#city_name {
+    font-size: 25px;
+    text-align: center;
+    padding-bottom: 15px;
+}
+#icon {
+    padding-bottom: 5px;
+    text-align: center;
+}
+
+#city_degree {
+    font-size: 40px;
+    text-align: center;
+}
+img {
+    width: 100px;
+}
