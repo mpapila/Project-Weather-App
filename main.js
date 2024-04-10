@@ -22,7 +22,7 @@ searchButton.addEventListener('click', async () => {
     try {
         resultDiv.style.visibility = 'visible'
         const searchInput = document.getElementById("searchInput").value
-        const cityGeo = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${searchInput},US&appid=4cf90865cd2594030205487461052ce9&units=imperial`)
+        const cityGeo = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${searchInput},US&appid=4cf90865cd2594030205487461052ce9&units=imperial`)
         const city = await cityGeo.json();
         const cityName = await city.name
         const temp = await city.main.temp
